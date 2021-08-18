@@ -1,10 +1,15 @@
 import './App.css';
-
+import Lista from './components/Lista'
 function App() {
   return (
-    <div className="App">
-      Olá Mundo!
-    </div>
+    <>
+      <h1>Minha primeira aplicação com React</h1>
+      <ul>
+        <Lista />
+        <Lista />
+        <Lista />
+      </ul>
+    </>
   );
 }
 
