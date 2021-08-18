@@ -1,7 +1,8 @@
 
-function Lista(){
+function Lista(props) {
+const {nome} = props;
   return(
-    <li>Item 1</li>
+    <li>{nome}</li>
   )
 }
 

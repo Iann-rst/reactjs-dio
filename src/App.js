@@ -5,9 +5,9 @@ function App() {
     <>
       <h1>Minha primeira aplicação com React</h1>
       <ul>
-        <Lista />
-        <Lista />
-        <Lista />
+        <Lista nome="Item 1"/>
+        <Lista nome="Item 2"/>
+        <Lista nome="Item 3"/>
       </ul>
     </>
   );
