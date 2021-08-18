@@ -1,4 +1,30 @@
 *{
   margin:0;
   padding:0;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
+h1{
+  text-align: center;
+}
+
+ul{
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 50px;
+  display:block;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+
+}
+
+ul li{
+  text-decoration: none;
+  border: 1px solid rgb(17, 17, 17);
+  background-color: rgb(197, 196, 196);
+  transition: 0.2s;
+}
+
+ul li:hover{
+  background-color: gray;
 }
