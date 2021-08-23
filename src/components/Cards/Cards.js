@@ -1,9 +1,35 @@
+/* Usando UseState */
+import {useState} from 'react';
+
 function Cards(){
+
+  const [valor, setValor] = useState(0);
+
+  function Adicionar(){
+    setValor(valor + 1);
+  }
+
+  function Remover(){
+    setValor(valor - 1);
+  }
+
   return(
-    <div class="card">
-      <h5 class="card-header">Featured</h5>
-      <div class="card-body">
-        <p>Meu texto no card</p>
+    <div className="card">
+      <div className="card-header">
+        Meu primeiro card
+      </div>
+      <div className="card-body">
+        <button type="button" 
+        className="btn btn-success"
+        onClick = {Adicionar}>
+          Adicionar
+        </button>
+        <button type="button" 
+        className="btn btn-danger"
+        onClick = {Remover}>
+          Remover
+        </button>
+        <p>{valor}</p>
       </div>
     </div>
   )
